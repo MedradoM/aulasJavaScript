@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula IV</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("./TheRockRebaixado.jpg");
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+    </style>
+    <script>
+        /*function maior (num1, num2){
+            if (num1 > num2){
+                alert('jooj');
+                return num1 - num2;
+            } else {
+                alert("nada");
+                return num2 - num1;
+            }
+        }
+        
+        console.log(maior(10, 24));
+        */
+        
+        var lerNumero = (mensagem) =>{
+            return parseFloat(prompt(mensagem));
+        } 
+
+        var saoMultiplos = (num1, num2) =>{
+            if (num1 % num2 === 0 || num2 % num1 === 0){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var main = () =>{
+            const numero1 = lerNumero("digite um numero");
+            const numero2 = lerNumero("digite outro numero");
+
+            if (saoMultiplos(numero1, numero2)) {
+               alert(`Os números são múltiplos um do outro.`);
+             } else {
+                alert(`Os números não são múltiplos um do outro.`);
+            } 
+        }
+
+        main()
+    </script>
+</body>
+</html>
