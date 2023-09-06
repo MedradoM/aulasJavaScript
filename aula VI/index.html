@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula VI</title>
+</head>
+<body>
+    <p>Qual o mês que você está?</p>
+    <div id="mes">
+        <input type="text" name="txt" />
+        <input type="submit" name="submitBtn">
+    </div>
+    <script>/*
+        const data = document.getElementById('mes');
+        data.addEventListener("submit", (event) =>{
+            event.preventDefault;
+            const sub = event.target.elements.txt.value;
+            alert(sub)
+            switch (sub){
+                case "março" || "abril" || "maio":
+                    alert("Você está no Outono")
+            break;
+                case "junho" || "julho" || "agosto":
+                    alert("Você está no Inverno")
+            break;
+                case "setembro" || "outubro" || "novembro":
+                    alert("Você está na Primavera")
+            break;
+                case "dezembro" || "janeiro" || "fevereiro":
+                    alert("Você está no verão")
+            break;
+                default:
+                    alert("digite novamente")
+            break;    
+            }
+        })*/
+
+        
+        var sub = prompt("digite o mês que você está");
+
+
+        switch (sub){
+                case "março" || "abril" || "maio":
+                    alert("Você está no Outono")
+            break;
+                case "junho" || "julho" || "agosto":
+                    alert("Você está no Inverno")
+            break;
+                case "setembro" || "outubro" || "novembro":
+                    alert("Você está na Primavera")
+            break;
+                case "dezembro" || "janeiro" || "fevereiro":
+                    alert("Você está no verão")
+            break;
+                default:
+                    alert("digite novamente ou tente colocar tudo em minusculo")  
+            break;  
+            }
+
+
+    </script>
+</body>
+</html>

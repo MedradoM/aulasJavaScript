@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula V</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+        let numero = 1;
+
+        let fat = () => {
+            var resultado = 1;
+            while(numero <= 10) {
+                resultado = resultado * numero;
+                console.log(resultado)
+                numero++
+            }
+            alert(`O valor total deu ${resultado}`);
+        }
+        fat();
+
+        let pro = () => {
+            for(let i = 0; i <= 10; i++){
+                if (numero < i){
+                    break;
+                } else {
+                    console.log(i);
+                }
+            }
+            alert("cabou")
+        }
+        pro();
+
+        
+    </script>
+</body>
+</html>

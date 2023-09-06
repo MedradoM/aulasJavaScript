@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 2</title>
+</head>
+<body>
+    <script>
+        var ano = prompt("digite o seu ano de nascimento");
+        var mes = prompt("digite o seu mês de nascimento");
+        var dia = prompt("digite o seu dia de nascimento");
+
+        const idadeAno = () =>{
+            while (ano > 2023) {
+                ano = prompt("digite um ano válido")
+            }
+            return(2023 - ano);
+        }
+
+        const idadeMês = () =>{
+            while (mes > 12 || mes <= 0) {
+                mes = prompt("digite um mês válido")
+            }
+            if (mes > 9){
+                ano--
+            }
+            return(mes);
+        }
+
+        const idadeDia = () =>{
+            while (dia > 31) {
+                dia = prompt("Digite um dia válido")
+            }
+            return(31 - dia)
+        }
+        
+        alert(`Você tem: ${idadeDia()} dias`)
+        idadeMês();
+        console.log(mes)
+        
+        switch (mes) {
+            case 1:
+            alert("4 meses")            
+        break;
+            case 2:
+            alert("5 meses")
+        break;
+            case 3:
+            alert("6 meses")
+        break;
+            case 4:
+            alert("7 meses")
+        break;
+            case 5:
+            alert("8 meses")
+        break;
+            case 6:
+            alert("9 meses")
+        break;
+            case 7:
+            alert("10 meses")
+        break;
+            case 8:
+            alert("11 meses")            
+        break;
+            case 9:
+            alert("Nenhum mês")
+        break;
+            case 10:
+            alert("1 mes")
+        break;
+            case 11:
+            alert("2 meses")
+        break;
+            case 12:
+            alert("3 meses");
+        break;
+    }
+    alert(`e por fim ${idadeAno()} anos`)
+    
+
+    </script>
+</body>
+</html>
