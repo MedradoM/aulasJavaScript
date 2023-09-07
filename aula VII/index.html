@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula VII</title>
+</head>
+<body>
+    <script>
+
+        //-----------Objetos-----------------------//
+
+        let fruta = {
+             nome: "maca",
+             cor: "vermei",
+             peso: 80,
+         }
+
+         console.log(fruta["nome"]);
+         fruta["nome"] = "pitaya";
+         console.log(fruta["nome"]);
+
+        for (const propriedade in fruta) {
+            console.log(fruta[propriedade])
+        }
+
+
+        //--------Objertos dentro de funções-------//
+        
+        function pessoa (nome, peso){
+            this.nome = nome;
+            this.peso = peso;
+            this.imc = () => {
+                 if (peso >= 100){
+                    return "você está acima do peso";
+                 } else {
+                    return "Voa mlk kkkkkk"
+                }
+            }
+        }
+
+        const pessoa1 = new pessoa("Thaís", 145);
+        const pessoa2 = new pessoa("Foguetão", 99);
+        console.log(pessoa1.imc())
+        console.log(pessoa2.imc())
+
+        //--------------lowercase e uppercase----------------//
+
+        console.log(pessoa1["nome"].length);
+        console.log(pessoa1["nome"].toLowerCase());
+        console.log(pessoa1["nome"].toUpperCase());
+
+        //--------------------Classes------------------------//
+
+        class Alimento {
+            constructor(nome, cor, peso, tipo) {
+                this.nome = nome;
+                this.cor = cor;
+                this.peso = peso;
+                this.tipo = tipo;
+            }
+            descricao() {
+                console.log(`a ${this.nome} é da cor ${this.cor} tem ${this.peso} de peso e é do tipo ${this.tipo}`)
+            }
+        }
+
+        const frutas = new Alimento("morango", "vermelho", 5, "comestivel kkkk sla");
+        const verdura = new Alimento("alface", "verde", 5, "mato -_-")
+
+        frutas.descricao();
+        verdura.descricao();
+
+    </script>
+</body>
+</html>
