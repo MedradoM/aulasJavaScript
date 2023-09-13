@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula VIII</title>
+</head>
+<body> 
+    <script>
+    // const nomes = ["Matheus", "Marcos", "Rafaella", "Yuri", "Davi"]
+    // nomes.unshift("Guilherme")
+    // nomes.push("Gabriella")
+    // console.log(nomes);
+    // console.log(nomes.join(' - ') + ".")
+
+    const listaNomes = []; 
+    let quantidade = 5;
+
+    while (listaNomes.length != quantidade) {
+      let entrada = prompt("Inserir nome");  
+      listaNomes.push(entrada.toUpperCase());  
+      console.log(listaNomes.length); 
+    }
+    console.log(listaNomes);
+
+    const novaLista = listaNomes.concat(["MATH", "EUS"])
+    console.log(novaLista)
+    console.log(novaLista.join("\n"))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa VII</title>
+</head>
+<body>
+    <script>
+
+function pessoa (nome, peso){
+            this.nome = nome;
+            this.peso = peso;
+            this.imc = () => {
+                 if (peso >= 100){
+                    return "você está acima do peso";
+                 } else {
+                    return "Voa mlk kkkkkk"
+                }
+            }
+        }
+
+        const pessoa1 = new pessoa("Thaís", 145);
+        const pessoa2 = new pessoa("Foguetão", 99);
+        console.log(pessoa1.imc())
+        console.log(pessoa2.imc())
+
+    </script>
+</body>
+</html>

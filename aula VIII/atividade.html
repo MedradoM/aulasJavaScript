@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        const cores = ["vermelho", "preto", "azul", "rosa", "verde"]
+        
+        //     while (cores.length < 5){
+        //         let entrada = prompt("Fala uma cor ae meu parceiro")
+        //         cores.push(entrada)
+        // }
+        console.log(`As cores que você digitou foram: ${cores.join(" - ") }; e você digitou ${cores.length} vezes`)
+        var tirar = prompt("digite uma cor que você quer tirar: ")
+        while (cores.includes(tirar) != true){
+            tirar = prompt("digite uma cor válida")
+        }
+        var tirarCor = cores.indexOf(tirar)
+        cores.splice(tirarCor)
+        console.log(cores)
+
+    </script>
+</body>
+</html>
